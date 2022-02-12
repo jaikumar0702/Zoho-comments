@@ -9,7 +9,14 @@ Mysql Table : signup,login,comment
 
 
 How to Run : Download the project in your eclipse and run , but for database connection you have to install Wampserver and in that you have to make mentioned tables by yourself.
--> Also user has to add mysql driver in project for executing queries/ making connection with database.
+-> Also user has to add mysql driver in project for executing queries/ making connection with database. 
+->Email should be in "@gmail.com" format.
+-> Password should be greater than 8 size and also contains a upper case Alphabet & character.
+
+
+Process:  -> First in Login class ,if User is using first time , user has to create account by using signup option and there he has to add Email,Password & secret code.After creating it will redirect user to login class
+->In the login class user has to pass valid credentials otherwise it will show Error .After logging in user can filter comments for there username and also can post the comment and it will show there email and comment that user did.
+
 
 Show Password: 
 ![Screenshot (181)](https://user-images.githubusercontent.com/70019204/153707318-3329957f-9ec8-4d32-9ada-63ab8d50889d.png)
