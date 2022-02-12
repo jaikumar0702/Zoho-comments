@@ -9,6 +9,7 @@ Mysql Table : signup,login,comment
 
 
 How to Run : Download the project in your eclipse and run , but for database connection you have to install Wampserver and in that you have to make mentioned tables by yourself.
+-> Also user has to add mysql driver in project for executing queries/ making connection with database.
 
 Show Password: 
 ![Screenshot (181)](https://user-images.githubusercontent.com/70019204/153707318-3329957f-9ec8-4d32-9ada-63ab8d50889d.png)
