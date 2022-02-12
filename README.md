@@ -43,3 +43,131 @@ Sign Up class
 
 Checking for valid credentials
 ![Screenshot (180)](https://user-images.githubusercontent.com/70019204/153707333-965a1b84-1520-4e6f-a5cd-9e0ca304bd39.png)
+
+
+
+
+
+
+
+
+Database Tables:- 
+
+mysql>
+mysql> use online
+Database changed
+mysql> ;
+ERROR:
+No query specified
+
+mysql> select *from signup;
++------------------------+----------+-------------+
+| Email                  | Password | Secret_Code |
++------------------------+----------+-------------+
+| jaikumar8503@gmail.com | 1234     | jai         |
+| tanish@gmail.com       | 12345    | tanish      |
+| fsdfa@g.com            | asdsa    | dsdsd       |
+| jai1213@gmail.com      | k        | k           |
+| jai@gmail.com          | Jai123@@ | sdsds       |
+| tanish@gmail.com       | Jai123@@ | jai         |
+| tanish@gmail.com       | Jai123@@ | 12345       |
++------------------------+----------+-------------+
+7 rows in set (0.00 sec)
+
+mysql> select *from signup;
++------------------------+----------+-------------+
+| Email                  | Password | Secret_Code |
++------------------------+----------+-------------+
+| jaikumar8503@gmail.com | 1234     | jai         |
+| tanish@gmail.com       | 12345    | tanish      |
+| fsdfa@g.com            | asdsa    | dsdsd       |
+| jai1213@gmail.com      | k        | k           |
+| jai@gmail.com          | Jai123@@ | sdsds       |
+| tanish@gmail.com       | Jai123@@ | jai         |
+| tanish@gmail.com       | Jai123@@ | 12345       |
++------------------------+----------+-------------+
+7 rows in set (0.00 sec)
+
+mysql> select *from signup;
++------------------------+----------+-------------+
+| Email                  | Password | Secret_Code |
++------------------------+----------+-------------+
+| jaikumar8503@gmail.com | 1234     | jai         |
+| tanish@gmail.com       | 12345    | tanish      |
+| fsdfa@g.com            | asdsa    | dsdsd       |
+| jai1213@gmail.com      | k        | k           |
+| jai@gmail.com          | Jai123@@ | sdsds       |
+| tanish@gmail.com       | Jai123@@ | jai         |
+| tanish@gmail.com       | Jai123@@ | 12345       |
+| jai8503@gmail.com      |          | 12345       |
++------------------------+----------+-------------+
+8 rows in set (0.00 sec)
+
+mysql> show tables;
++------------------+
+| Tables_in_online |
++------------------+
+| comment          |
+| login            |
+| signup           |
++------------------+
+3 rows in set (1.25 sec)
+
+mysql> select *from signup;
++------------------------+---------------------+-------------+
+| Email                  | Password            | Secret_Code |
++------------------------+---------------------+-------------+
+| jaikumar8503@gmail.com | 1234                | jai         |
+| tanish@gmail.com       | Jai123@@            | tanish      |
+| fsdfa@g.com            | asdsa               | dsdsd       |
+| jai1213@gmail.com      | k                   | k           |
+| jai@gmail.com          | Jai123@@            | sdsds       |
+| tanish@gmail.com       | Jai123@@            | jai         |
+| tanish@gmail.com       | Jai123@@            | 12345       |
+| jai8503@gmail.com      | dsadsaksdsdsadssdsa | 12345       |
+| test@gmail.com         | Jai123@@            | jai         |
++------------------------+---------------------+-------------+
+9 rows in set (0.02 sec)
+
+mysql> select *from login;
+Empty set (0.05 sec)
+
+mysql> select *from comment;
++------------------------+--------------------------+
+| Email                  | Comment                  |
++------------------------+--------------------------+
+| jaikumar8503@gmail.com | First project            |
+| jaikumar8503@gmail.com | Second project           |
+| jaikumar8503@gmail.com | jai                      |
+| tanish@gmail.com       | dafsfd                   |
+| tanish@gmail.com       | jjjj                     |
+| tanish@gmail.com       |                          |
+| tanish@gmail.com       | sdass aadfdsf dsfd sd df |
+| tanish@gmail.com       | jja                      |
+| tanish@gmail.com       | is it working?           |
+| tanish@gmail.com       | how are you?             |
+| tanish@gmail.com       | dekh                     |
+| tanish@gmail.com       | dsadsads                 |
+| tanish@gmail.com       | xcxcxczczx               |
+| tanish@gmail.com       | cdsddddddddddddd         |
+| tanish@gmail.com       | dwaqqqqqqqqqqq           |
+| tanish@gmail.com       | wqqqqqqqqqqqqqqqqqqq     |
+| tanish@gmail.com       | wqqqqqqqqqqqqqqqq        |
+| tanish@gmail.com       | wqqqqqqqqqqq             |
+| tanish@gmail.com       | kkk                      |
+| tanish@gmail.com       | kk                       |
+| tanish@gmail.com       | kk                       |
+| tanish@gmail.com       | kk                       |
+| tanish@gmail.com       | k                        |
+| tanish@gmail.com       | dd                       |
+| jai8503@gmail.com      | jjjj                     |
+| test@gmail.com         | it is testing .          |
+| test@gmail.com         | testing                  |
+| test@gmail.com         | testing                  |
+| test@gmail.com         | testing                  |
+| test@gmail.com         | testing                  |
+| test@gmail.com         | testing                  |
++------------------------+--------------------------+
+31 rows in set (0.02 sec)
+
+mysql>
